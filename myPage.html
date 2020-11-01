@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Tab</title>
+    <link rel="stylesheet" href="css/myStyles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/weather-icons.css">
+    <link rel="stylesheet" href="css/weather-icons.min.css">
+    <link rel="stylesheet" href="css/weather-icons-wind.css">
+    <link rel="stylesheet" href="css/weather-icons-wind.min.css">
+</head>
+<style>
+    .timeCheck {
+        font-size: 24px;
+        font-weight: bold;
+    }
+</style>
+<body class="xjjs-hid">
+    <div id="testthem"></div>
+    <div class="app">
+        <div id="xjjs-hid-greeting" class="greeting"></div>
+        <div class="top-right current f">
+            <div id="arrowIcon" class="arr arrowClose">
+                <i class="fa fa-angle-double-left"></i>
+            </div>
+            <div id="option" class="hide-left">
+                <label class="switch">
+                    <input id="checkClock" type="checkbox" checked>
+                    <span class="slider round"></span>
+                </label>
+                <label class="title">Show Clock</label>
+
+                <label class="switch">
+                    <input id="checkWeather" type="checkbox" checked>
+                    <span class="slider round"></span>
+                </label>
+                <label class="title">Show Weather</label>
+            </div>
+        </div>
+        <div class="bottom-left current">
+            <div class="time" id="currTime"></div>
+            <div class="date" id="currDate"></div>
+        </div>
+        <div class="bottom-right current" id="currWeather">
+            <div class="container weather">
+                <div class="row">
+                    <div class="col-xs-4 weather-left">
+                        <h3 class="text-center"><i class="wi wi-day-cloudy"></i></h3>
+                        <h3 class="text-center"><i class="wi wi-thermometer"></i><label id="temp"></label><sup>°C</sup></h3>
+                        <h5 class="font-weight-light"><label id="feelLike"></label><sup>°C</sup></h5>
+                    </div>
+                    <div class="col-xs-8 weather-right font-set">
+                        <h3 class="text-center pl-3 pr-3" id="cityName"></h3>
+                        <h5 class="d-flex flex-row justify-content-around">
+                            <i class="wi wi-cloudy"><label class="pl-1" id="cloudiness"></label>%</i>
+                            <i class="wi wi-raindrop"><label class="pl-1" id="humidity"></label>%</i>
+                            <i class="wi wi-strong-wind"><label class="pl-1" id="windspeed"></label>m/s</i>
+                        </h5>
+                        <h5 class="font-weight-light text-center"><label id="weatherdes"></label</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="js/lib/jquery-3.5.1.js"></script>
+<script src="js/myScript.js"></script>
+</html>
